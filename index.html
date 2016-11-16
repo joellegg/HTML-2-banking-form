@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  </head>
+  <body>
+	<form class="col-xs-8">
+		<!-- 1. Applicant first name -->
+		<div class="form-group row">
+		  <label for="example-text-input" class="col-xs-3 col-form-label">First Name</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" placeholder="John" id="example-text-input">
+		  </div>
+		</div>
+		
+		<!-- 2. Applicant middle initial -->
+		<div class="form-group row">
+		  <label for="example-search-input" class="col-xs-3 col-form-label">Middle Initial</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="search" placeholder="A" id="example-search-input">
+		  </div>
+		</div>
+		
+		<!-- 3. Applicant last name -->
+		<div class="form-group row">
+		  <label for="last_name" class="col-xs-3 col-form-label">Last Name</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" placeholder="Smith" id="last_name">
+		  </div>
+		</div>
+		
+		<!-- 4. Applicant address -->
+		<!-- address-line1 input-->
+		<div class="form-group row">
+            <label for="address-line1" class="col-xs-3 col-form-label">Address Line 1</label>
+            <div class="col-xs-9">
+                <input class="form-control" name="address-line1" type="text" placeholder="address line 1">
+                <p class="help-block">Street address, P.O. box</p>
+            </div>
+        </div>
+        <!-- address-line2 input-->
+        <div class="form-group row">
+            <label for="address-line2" class="col-xs-3 col-form-label">Address Line 2</label>
+            <div class="col-xs-9">
+                <input class="form-control" name="address-line2" type="text" placeholder="address line 2">
+                <p class="help-block">Apartment, suite , unit, building, floor, etc.</p>
+            </div>
+        </div>
+        <!-- city input-->
+        <div class="form-group row">
+		  <label for="city" class="col-xs-3 col-form-label">City</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" placeholder="city" id="city">
+		  </div>
+		</div>
+        <!-- region input-->
+        <div class="form-group row">
+		  <label for="state" class="col-xs-3 col-form-label">State / Province / Region</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" id="state" placeholder="state / province / region">
+		  </div>
+		</div>
+        <!-- postal-code input-->
+        <div class="form-group row">
+		  <label for="postal" class="col-xs-3 col-form-label">Zip or Postal Code</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" id="postal" placeholder="zip or postal code">
+		  </div>
+		</div>
+		
+		<!-- 5. Applicant occupation -->
+		<div class="form-group row">
+		  <label for="occupation" class="col-xs-3 col-form-label">Applicant Occupation</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" placeholder="occupation" id="occupation">
+		  </div>
+		</div>
+
+		<!-- 6. Applicant employer -->
+		<div class="form-group row">
+		  <label for="employer" class="col-xs-3 col-form-label">Applicant Employer</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" placeholder="employer" id="employer">
+		  </div>
+		</div>
+
+		<!-- 7. Employer address -->
+		<!-- address-line1 input-->
+		<div class="form-group row">
+            <label for="address-line1" class="col-xs-3 col-form-label">Address Line 1</label>
+            <div class="col-xs-9">
+                <input class="form-control" name="address-line1" type="text" placeholder="address line 1">
+                <p class="help-block">Street address, P.O. box</p>
+            </div>
+        </div>
+        <!-- address-line2 input-->
+        <div class="form-group row">
+            <label for="address-line2" class="col-xs-3 col-form-label">Address Line 2</label>
+            <div class="col-xs-9">
+                <input class="form-control" name="address-line2" type="text" placeholder="address line 2">
+                <p class="help-block">Apartment, suite , unit, building, floor, etc.</p>
+            </div>
+        </div>
+        <!-- city input-->
+        <div class="form-group row">
+		  <label for="city" class="col-xs-3 col-form-label">City</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" placeholder="city" id="city">
+		  </div>
+		</div>
+        <!-- region input-->
+        <div class="form-group row">
+		  <label for="state" class="col-xs-3 col-form-label">State / Province / Region</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" id="state" placeholder="state / province / region">
+		  </div>
+		</div>
+        <!-- postal-code input-->
+        <div class="form-group row">
+		  <label for="postal" class="col-xs-3 col-form-label">State / Province / Region</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="text" id="postal" placeholder="zip or postal code">
+		  </div>
+		</div>
+
+		<!-- 8. Type of loan select element with these options:
+			Commercial
+			Real estate
+			Personal
+			Mortgage -->
+		<div class="form-group row">
+		    <label for="loan-type" class="col-xs-3 col-form-label">Loan Type</label>
+		    <div class="col-xs-9">
+		    <select class="form-control" id="loan-type">
+		      <option>Commercial</option>
+		      <option>Real Estate</option>
+		      <option>Personal</option>
+		      <option>Mortgage</option>
+		    </select>
+		    </div>
+		</div>
+
+		<!-- 9. Requested amount of loan -->
+		<div class="form-group row">
+			<label for="loan-amount" class="col-xs-3 col-form-label">Loan Amount</label>
+			<div class="col-xs-9">
+			  	<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount $">
+			</div>
+		</div>
+
+		<!-- 10. Radio button elements for loan length
+			5 years
+			15 years
+			30 years -->
+		<div class="form-group row">
+			<label for="term" class="col-xs-3 col-form-label">Length of Loan:</label>
+			<div class="col-xs-9">
+				<label class="custom-control custom-radio">
+				  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+				  <span class="custom-control-indicator"></span>
+				  <span class="custom-control-description">5 years</span>
+				</label>
+				<label class="custom-control custom-radio">
+				  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+				  <span class="custom-control-indicator"></span>
+				  <span class="custom-control-description">15 years</span>
+				</label>
+				<label class="custom-control custom-radio">
+				  <input id="radio3" name="radio" type="radio" class="custom-control-input">
+				  <span class="custom-control-indicator"></span>
+				  <span class="custom-control-description">30 years</span>
+				</label>
+			</div>
+		</div>
+
+		<!-- 11. Checkbox group for special conditions
+			I have a down payment
+			Out-of-state resident
+			Married
+			Loan will be co-signed -->
+		<div class="form-group row">
+			<label for="special-conditions" class="col-xs-3 col-form-label">Special Conditions:</label>
+			<div class="col-xs-9">
+				<label class="form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> I have a down payment
+				</label>
+				<label class="form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Out-of-state resident
+				</label><br>
+				<label class="form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Married
+				</label>
+				<label class="form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Loan will be co-signed
+				</label>
+			</div>
+		</div>
+			
+		<!-- 12. A text area to allow for additional comments -->
+		<div class="form-group row">
+		  <label for="comments" class="col-xs-3 col-form-label">Comments</label>
+		  <div class="col-xs-9">
+		  	<textarea class="form-control" id="comments" rows="5"></textarea>
+		  </div>
+		</div>
+
+		<!-- 13. Applicant email address -->
+		<div class="form-group row">
+		  <label for="email" class="col-xs-3 col-form-label">Email Address</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="url" placeholder="johnAsmith@example.com" id="email">
+		  </div>
+		</div>
+
+		<!-- 14. Applicant telephone number -->
+		<div class="form-group row">
+		  <label for="tel-input" class="col-xs-3 col-form-label">Telephone</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="tel-input">
+		  </div>
+		</div>
+
+		<!-- 15. Applicant LinkedIn URL -->
+		<div class="form-group row">
+		  <label for="linkedIn" class="col-xs-3 col-form-label">LinkedIn URL</label>
+		  <div class="col-xs-9">
+		    <input class="form-control" type="url" placeholder="http://wwww.linkedin.com/example" id="linkedIn">
+		  </div>
+		</div>
+
+		<div class="form-group row">
+		  <label for="linkedIn" class="col-xs-3 col-form-label"></label>
+		  <div class="col-xs-9">
+		    <button type="submit" class="btn btn-primary form-control">Submit</button>
+		  </div>
+		</div>
+	</form>
+
+	
+
+	<!-- Simple form which will send a POST request -->
+	<!-- <form action="" method="post">
+		<legend>-Personal Info-</legend>
+			<div>
+			  <label for="first-name">First Name:</label>
+			  <input id="first-name" type="text">
+			  <label for="middle-initial">Middle Initial:</label>
+			  <input id="middle-initial" type="text">
+			  <label for="last-name">Last Name:</label>
+			  <input id="last-name" type="text">
+			</div>
+			<div>
+			  <label for="address">Address:</label>
+			  <input id="address" type="text">
+			  <label for="Occupation">Occupation:</label>
+			  <input id="Occupation" type="text">
+			  <br>
+			  <label for="Employer">Employer:</label>
+			  <input id="Employer" type="text">
+			  <label for="Employer_Address">Employer Address:</label>
+			  <input id="Employer_Address" type="text">
+			</div>
+			<div>
+				<label for="select">Loan Purpose:</label>
+				<select name="select">
+				  <option value="Commercial">Commercial</option> 
+				  <option value="Real-estate" selected>Real Estate</option>
+				  <option value="Personal">Personal</option>
+				  <option value="Mortgage">Mortgage</option>
+				</select>
+			</div>
+				<label for="Amount_requested">Amount Requested:</label>
+			  	<input id="Amount_requested" type="text">
+			<div>
+				<label for="term">Length of Loan:</label>
+			  	<input type="radio" name="term" value="years5" checked>5 years
+			  	<input type="radio" name="term" value="years15">15 years
+			  	<input type="radio" name="term" value="years30">30 years
+			</div>
+			
+			<div>
+				<label for="textarea">Additional Comments:</label><br>
+				<textarea name="textarea" rows="10" cols="40"></textarea>
+			</div>
+			<div>
+				<label for="email">Email:</label>
+			  	<input id="email" type="text">
+			</div> -->
+
+			<!-- Applicant telephone number -->
+			<!-- div>
+				<label for="phone-number">Phone Number:</label>
+			  	<input id="phone-number" type="text">
+			</div> -->
+	 		<!-- Applicant LinkedIn URL -->
+			<!-- <div>
+				<label for="LinkedIn">LinkedIn URL:</label>
+			  	<input id="LinkedIn" type="text">
+			</div>
+	  		<input type="submit" value="Submit">
+	</form> --> 
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
