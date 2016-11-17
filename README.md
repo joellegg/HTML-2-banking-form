@@ -1,6 +1,7 @@
 ## Synopsis
 
 Banking-form that includes the following components...
+
 1. Applicant first name
 
 2. Applicant middle initial
